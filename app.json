@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Happy Kilojoule Kitchen",
+    "slug": "mums-glow-daily",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F0FFF4",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mumsglow.daily",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take photos of your meals to track what you eat",
+        "NSPhotoLibraryUsageDescription": "Choose meal photos from your gallery"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F0FFF4"
+      },
+      "package": "com.mumsglow.daily",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker",
+      "expo-notifications"
+    ]
+  }
+}
