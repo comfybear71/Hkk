@@ -26,6 +26,11 @@
       "package": "com.mumsglow.daily",
       "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
     },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/favicon.png"
+    },
     "plugins": [
       "expo-camera",
       "expo-image-picker",
